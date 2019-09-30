@@ -15,8 +15,10 @@ hello
 run
 hello
 ```
-* Anweisung ist an Zeile gebunden
+* Anweisung ist an Zeile gebunden (10)
 * ``` run ``` lässt Programm abspielen 
+* die Zeilen werden von 1 aufsteigend abgespielt
+* Die Zeilen müssen nicht Direkt aufeinander folgend sein 
 ```
 10 print "hello"
 20 go to 10 
@@ -31,4 +33,5 @@ save
 ```
 * speichert auf Kassette, falls eine solche angeschlossen ist
 * Speichert man ein Programm auf einer Kassette kann man es durch ``` load ```
-wieder laden, falls es durch ausstellen oder ähnliches gelöscht wurde
+wieder laden, falls es durch ausstellen des Computers,oder ähnliches, gelöscht wurde
+* w
