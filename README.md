@@ -51,6 +51,7 @@ list
 save 
 ```
 * speichert das gesamte Programm auf einer Kassette, falls eine solche angeschlossen ist
+* man muss play und reccord auf dem kassettenlesegerät gedrückt halten, bis auf dem Computer `waiting` zu lesen ist
 * Speichert man ein Programm auf einer Kassette kann man es durch `load`
 wieder laden, falls es durch ausstellen des Computers,oder ähnliches, gelöscht wurde
 * dies kann eine Weile dauern
@@ -64,10 +65,18 @@ wieder laden, falls es durch ausstellen des Computers,oder ähnliches, gelöscht
 ```
 * öffnet den Drucker im normalen Druckmodus 
 * druckt die Zahlen 1 bis 50 
-* Damit dass funktioniert muss man einen Drucker anschließen, welcher funktionstüchtig ist und ein Blatt Papier einlegen
+* Damit das funktioniert, muss man einen Drucker anschließen, welcher funktionstüchtig ist und ein Blatt Papier einlegen
 * schreibt man die "k's" in Großbuchstaben funktioniert es nicht #interessant 
-
-
+## 4. Bedingungen
+```
+10 i=1
+20 print i
+30 i=i+1
+40 if i <51 then 20
+```
+* zählt von 1 bis 50
+* Verschiedenste Möglichkeiten mit dem selben Ergebnis
+* Quasi das gleiche wie beim Drucken-Programm nur ohne Drucken
 
 
 
