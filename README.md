@@ -60,7 +60,7 @@ wieder laden, falls es durch ausstellen des Computers,oder ähnliches, gelöscht
 * öffnet den Drucker im normalen Druckmodus 
 * druckt die Zahlen 1 bis 50 
 * Damit dass funktioniert muss man einen Drucker anschließen, welcher funktionstüchtig ist und ein Blatt Papier einlegen
-* schreibt man die "k's" in Großbuchstaben funktioniert es nicht
+* schreibt man die "k's" in Großbuchstaben funktioniert es nicht #interessant 
 
 
 
