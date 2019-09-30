@@ -44,5 +44,9 @@ wieder laden, falls es durch ausstellen des Computers,oder ähnliches, gelöscht
 30 i=i+1
 40 go to 20
 ```
-*
+* Mit diesen Befehlen zählt der Computer von 0 in einer-Schritten aufwärts, bis man ihn stoppt
+* 0 ist der Startpunkt
+* `i=i+1` gibt an, dass das Programm in Einer-Schritten zählen
+* ` go to 20` lässt das Programm sich immer wieder wiederholen
+
 
