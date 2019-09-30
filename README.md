@@ -1,7 +1,7 @@
 <!-- lang:de_DE -->
 
 # CBM2001
-## 1. 
+## 1. Einfache Programme
 
 ```
 print "hello"
@@ -31,13 +31,6 @@ hello
 list
 ```
 * zeigt alle Programme (an Zeilen gebundene Anweisungen) an
-``` 
-save 
-```
-* speichert das gesamte Programm auf einer Kassette, falls eine solche angeschlossen ist
-* Speichert man ein Programm auf einer Kassette kann man es durch `load`
-wieder laden, falls es durch ausstellen des Computers,oder ähnliches, gelöscht wurde
-* kann eine Weile dauern
 ```
 10 i=0
 20 print i
@@ -48,5 +41,14 @@ wieder laden, falls es durch ausstellen des Computers,oder ähnliches, gelöscht
 * 0 ist der Startpunkt
 * `i=i+1` gibt an, dass das Programm in Einer-Schritten zählen
 * ` go to 20` lässt das Programm sich immer wieder wiederholen
+## 2. Speichern
+``` 
+save 
+```
+* speichert das gesamte Programm auf einer Kassette, falls eine solche angeschlossen ist
+* Speichert man ein Programm auf einer Kassette kann man es durch `load`
+wieder laden, falls es durch ausstellen des Computers,oder ähnliches, gelöscht wurde
+* kann eine Weile dauern
+
 
 
