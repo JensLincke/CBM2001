@@ -16,5 +16,5 @@ run
 hello
 ```
 * Anweisung ist an Zeile gebunden
-* ``` Run ``` lässt Programm abspielen 
+* ``` run ``` lässt Programm abspielen 
  
