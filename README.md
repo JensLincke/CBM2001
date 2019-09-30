@@ -26,5 +26,6 @@ hello
 list
 ```
 * zeigt alle Programme (an Zeilen gebundene Anweisungen) an
-``` save ```
+s
+``` save```
 * speichert auf Kassette, falls eine solche angeschlossen ist
