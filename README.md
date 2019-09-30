@@ -78,6 +78,18 @@ wieder laden, falls es durch ausstellen des Computers,oder ähnliches, gelöscht
 * Verschiedenste Möglichkeiten mit dem selben Ergebnis
 * Quasi das gleiche wie beim Drucken-Programm nur ohne Drucken
 * hiermit kann man festlegen, wann eine Schleife enden soll und was dann getan werden soll
+## 5. Benutzerdefinierte Bedingungen
+```
+10 input "Wieviel?";N
+20 input "Wie schnell?";J
+30 I=0
+40 Print I
+50 I=I+J
+60 If <N then 40
+```
+* Hiermit kann man den Benutzer des Programmes fragen, welche Variablen er nutzen möchte
+* dies ist mit nur einer, aber auch mit mehreren Variablen möglich
+* Die Fragen müssen am Anfang des Programmabschnitts sein, da sonst mitten im Programm, aufgrund der Schleife, wieder danach gefragt wird 
 
 
 
