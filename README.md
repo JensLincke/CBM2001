@@ -30,3 +30,5 @@ list
 save 
 ```
 * speichert auf Kassette, falls eine solche angeschlossen ist
+* Speichert man ein Programm auf einer Kassette kann man es durch ``` load ```
+wieder laden, falls es durch ausstellen oder ähnliches gelöscht wurde
