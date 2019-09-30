@@ -11,10 +11,10 @@ hello
 ```
 10 print "hello"
 run
-  hello
+hello
 run
-  hello
+hello
 ```
-
-
+* Anweisung ist an Zeile gebunden
+* ``` Run ``` lässt Programm abspielen 
  
