@@ -3,9 +3,9 @@
 # CBM2001
 ## 1. Einfaches Programm
 
-
 ```
-hello
+10 print "hello world"
+20 
 ```
 
 
