@@ -16,7 +16,7 @@ run
 hello
 ```
 * Anweisung ist an Zeile gebunden (10)
-* ``` run ``` lässt Programm abspielen 
+* `srun` lässt Programm abspielen 
 * die Zeilen werden von 1 aufsteigend abgespielt
 * Die Zeilen müssen nicht Direkt aufeinander folgend sein 
 ```
@@ -31,7 +31,7 @@ list
 ``` 
 save 
 ```
-* speichert auf Kassette, falls eine solche angeschlossen ist
+* speichert das gesamte Programm auf einer Kassette, falls eine solche angeschlossen ist
 * Speichert man ein Programm auf einer Kassette kann man es durch `load`
 wieder laden, falls es durch ausstellen des Computers,oder ähnliches, gelöscht wurde
 * w
