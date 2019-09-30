@@ -15,10 +15,12 @@ hello
 run
 hello
 ```
-* Anweisung ist an Zeile gebunden (10)
-* `run` lässt Programm abspielen 
+* Anweisung ist an Zeile gebunden 
+* Es kann eine beliebige Zeilennummerierung gewählt werden
 * die Zeilen werden von 1 aufsteigend abgespielt
-* Die Zeilen müssen nicht Direkt aufeinander folgend sein 
+* Die Zeilen müssen nicht Direkt aufeinander folgend sein
+* Eine Nummerierung mit nicht direkt aufeinander folgenden Zahlen ist vorteilhaft, da man so noch Platz für Einschübe in das Programm hat
+* `run` lässt Programm abspielen
 ```
 10 print "hello"
 20 go to 10 
@@ -42,4 +44,5 @@ wieder laden, falls es durch ausstellen des Computers,oder ähnliches, gelöscht
 30 i=i+1
 40 go to 20
 ```
+*
 
