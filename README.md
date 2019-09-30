@@ -9,7 +9,11 @@ hello
 ```
 * führt eine Anweisung einfach aus
 ```
-xoxo 
+10 print "hello"
+run
+  hello
+run
+  hello
 ```
 
 
