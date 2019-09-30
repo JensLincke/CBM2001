@@ -48,7 +48,21 @@ save
 * speichert das gesamte Programm auf einer Kassette, falls eine solche angeschlossen ist
 * Speichert man ein Programm auf einer Kassette kann man es durch `load`
 wieder laden, falls es durch ausstellen des Computers,oder ähnliches, gelöscht wurde
-* kann eine Weile dauern
+* dies kann eine Weile dauern
+## 3. Drucken
+```
+10 Open 5,4,0
+20 For k = 1 to 50
+30 Print#5,k
+40 next k
+50 close 5
+```
+* öffnet den Drucker im normalen Druckmodus 
+* druckt die Zahlen 1 bis 50 
+* Damit dass funktioniert muss man einen Drucker anschließen, welcher funktionstüchtig ist und ein Blatt Papier einlegen
+* schreibt man die "k's" in Großbuchstaben funktioniert es nicht
+
+
 
 
 
