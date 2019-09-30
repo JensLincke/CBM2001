@@ -1,11 +1,12 @@
 <!-- lang:de_DE -->
 
 # CBM2001
-## 1. Einfaches Programm
+## 1. 
 
 ```
-10 print "hello world"
-20 
+print "hello"
+
+hello
 ```
 
 
