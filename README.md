@@ -5,9 +5,7 @@
 
 ```
 print "hello"
-```
 
-```
 hello
 ```
 * führt eine Anweisung einfach aus
