@@ -25,5 +25,5 @@ hello
 ```
 list
 ```
-* zeigt alle Programme (an Zeilen gebundene Anweisungen)an
+* zeigt alle Programme (an Zeilen gebundene Anweisungen) an
  
