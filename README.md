@@ -77,6 +77,7 @@ wieder laden, falls es durch ausstellen des Computers,oder ähnliches, gelöscht
 * zählt von 1 bis 50
 * Verschiedenste Möglichkeiten mit dem selben Ergebnis
 * Quasi das gleiche wie beim Drucken-Programm nur ohne Drucken
+* hiermit kann man festlegen, wann eine Schleife enden soll und was dann getan werden soll
 
 
 
