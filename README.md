@@ -17,4 +17,13 @@ hello
 ```
 * Anweisung ist an Zeile gebunden
 * ``` run ``` lässt Programm abspielen 
+```
+10 print "hello"
+20 go to 10 
+```
+* Programm wiederholt sich immer wieder 
+```
+list
+```
+* zeigt alle Programme (an Zeilen gebundene Anweisungen)an
  
