@@ -151,7 +151,7 @@ POKE 32956,61
 * laufendes O, dass mit wasd bewegt werden kann
 * läuft jewails einen Schritt in die angegebene Richtung
 s
-## painting with numbers
+## 8. painting with numbers
 
 ![](paint.png){height=250}
 ```
@@ -174,7 +174,9 @@ s
 * durch eingabe von `C` wird man gefragt was man sein will 
 * Jedes Zeichen hat eine zugehörige Nummer, welche man eintippen muss, damit der Character zu diesem wechselt
 * Der bereits gefahrene Weg wird nicht, wie beim Vorherigen Programmabschnitt, sofort wieder gelöscht
-
+ tippen
+* Ein Problem ist, dass die Frage "Was willst du sein?" jedes mal stehen bleibt, wodurch der Bildschirm nicht 100% frei ist
+* im gegensatz zum vorherigen "mit Zeichen malen" kann man bei diesem die Richtung angeben, in welche gezeichnet werden soll und kann 
 ```
 10 P = 32768
 11 X = 20.0
@@ -207,9 +209,8 @@ s
 200 INPUT "WAS WILLST DU SEIN?";I
 210 GO TO 20
 ```
-
-
-
+* Zeile 85 bis 95 sind ein Werkzeug zum Debuggen, welches normalerweise übersprungen wird
+* der unterschied von diesem programm zum vorherigen ist, dass der Character sich nun von selbst bewegt und man nicht mehr für jedes Zeichen eine Taste drücken muss, sondern nur noch wenn man die Richtung ändern möchte.
 
 
 
