@@ -106,7 +106,7 @@ save
 60 If <N then 40
 ```
 
-- Hiermit kann man den Benutzer des Programmes fragen, welche Variablen er nutzen möchte
+- Hiermit kann man den Benutzer des Programms fragen, welche Variablen er nutzen möchte
 - dies ist mit nur einer, aber auch mit mehreren Variablen möglich
 - Die Fragen müssen am Anfang des Programmabschnitts sein, da sonst mitten im Programm, aufgrund der Schleife, wieder danach gefragt wird
 
@@ -149,8 +149,8 @@ POKE 32956,61
 120 GOTO 20
 ```
 * laufendes O, dass mit wasd bewegt werden kann
-* läuft jewails einen Schritt in die angegebene Richtung
-s
+* läuft jeweils einen Schritt in die angegebene Richtung
+
 ## 8. painting with numbers
 
 ![](paint.png){height=250}
@@ -171,12 +171,13 @@ s
 210 GO TO 20
 ```
 * mit diesem Programmabschnitt kann man mit den Tasten WASD sozusagen malen
-* durch eingabe von `C` wird man gefragt was man sein will 
-* Jedes Zeichen hat eine zugehörige Nummer, welche man eintippen muss, damit der Character zu diesem wechselt
+* durch Eingabe von `C` wird man gefragt was man sein will 
+* Jedes Zeichen hat eine zugehörige Nummer, welche man eintippen muss, damit der Charakter zu diesem wechselt
 * Der bereits gefahrene Weg wird nicht, wie beim Vorherigen Programmabschnitt, sofort wieder gelöscht
  tippen
 * Ein Problem ist, dass die Frage "Was willst du sein?" jedes mal stehen bleibt, wodurch der Bildschirm nicht 100% frei ist
 * im gegensatz zum vorherigen "mit Zeichen malen" kann man bei diesem die Richtung angeben, in welche gezeichnet werden soll und kann 
+## 9. The painting snake
 ```
 10 P = 32768
 11 X = 20.0
@@ -210,7 +211,11 @@ s
 210 GO TO 20
 ```
 * Zeile 85 bis 95 sind ein Werkzeug zum Debuggen, welches normalerweise übersprungen wird
-* der unterschied von diesem programm zum vorherigen ist, dass der Character sich nun von selbst bewegt und man nicht mehr für jedes Zeichen eine Taste drücken muss, sondern nur noch wenn man die Richtung ändern möchte.
+* der unterschied von diesem Programm zum vorherigen ist, dass der Charakter sich nun von selbst bewegt und man nicht mehr für jedes Zeichen eine Taste drücken muss, sondern nur noch wenn man die Richtung ändern möchte.
+* wir haben festgestellt, dass man Dinge nur mit Zeichenkombinationen mit maximal 2 Zeichen benennen kann. 
+* A ist der Punkt auf dem Bildschirm auf dem man sich befindet
+* X und Y sind die Koordinaten nach oben, unten, links und rechts, wie in einem Koordinatensystem
+
 
 
 
