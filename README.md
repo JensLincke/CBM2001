@@ -122,7 +122,7 @@ POKE 32956,61
 ```
 * Dies zeigt alle verfügbaren Zeichen auf
 * Die Zeichen werden von oben links nebeneinander aufgelistet und belegen ca. 3,5 Zeilen
-* 32768 legt den Startpunkt auf dem Bildschirm fest und kann in jede beliebige, auf dem Bildschirm vorhandene (32768-33767)zahl geändert werden
+* 32768 legt den Startpunkt auf dem Bildschirm fest und kann in jede beliebige, auf dem Bildschirm vorhandene (32768-33767) geändert werden
 
 ![Mit o's gemalte linie](SchiefeLinie.png){height=200}
 
