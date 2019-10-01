@@ -154,7 +154,7 @@ s
 ## paint with numbers
 
 ![](paint.png){height 300}
-
+```
 10 P = 32768
 11 CX = 20
 12 CY = 20
@@ -169,14 +169,14 @@ s
 130 GO TO 20
 200 INPUT "WAS WILLST DU SEIN?";I
 210 GO TO 20
+```
 
 
 
 
 
 
-
-
+```
 10 P = 32768
 11 X = 20.0
 12 Y = 20.0
@@ -207,3 +207,21 @@ s
 130 GO TO 20
 200 INPUT "WAS WILLST DU SEIN?";I
 210 GO TO 20
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
