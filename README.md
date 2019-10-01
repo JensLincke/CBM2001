@@ -126,8 +126,12 @@ POKE 32956,61
 
 ![Mit o's gemalte linie](SchiefeLinie.png){height=200}
 
-
-
+```
+10 GET G$
+15 IF G$="" THEN 10
+20 PRINT G$
+30 GOTO 10
+```
 
 
 
