@@ -217,7 +217,7 @@ POKE 32956,61
 * X und Y sind die Koordinaten nach oben, unten, links und rechts, wie in einem Koordinatensystem
 
 ## 10. Zeichensatz
-![](ZeichensatzPET.png){height=250}
+![](ZeichensatzPET.png){height=250, style="float:right"}
 ```
 5 PRINT CHR$(147)
 10 FOR I=0 TO 15
