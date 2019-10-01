@@ -153,7 +153,7 @@ POKE 32956,61
 s
 ## painting with numbers
 
-![](paint.png){height 200}
+![](paint.png){height 100}
 ```
 10 P = 32768
 11 CX = 20
