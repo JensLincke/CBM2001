@@ -133,18 +133,40 @@ POKE 32956,61
 40 GOTO 10
 ```
 
+## 7. The walking O
 
+```
+10 P = 32768
+11 CX = 20
+12 CY = 20
+20 GET G$
+30 IF G$ = "W" THEN CX = CX -1
+40 IF G$ = "A" THEN CY = CY - 1
+50 IF G$ = "S" THEN CX = CX + 1
+60 IF G$ = "D" THEN CY = CY +1
+90 PRINT CHR$ (147)
+110 POKE P+40* CX +CY,15
+120 GOTO 20
+```
+* laufendes O, dass mit wasd bewegt werden kann
+* läuft jewails einen Schritt in die angegebene Richtung
 
+## paint with numbers
 
+![](paint.png)
 
-
-
-
-
-
-
-
-
-
-
+10 P = 32768
+11 CX = 20
+12 CY = 20
+19 PRINT CHR$ (147)
+20 GET G$
+30 IF G$ = "W" THEN CX = CX -1
+40 IF G$ = "A" THEN CY = CY - 1
+50 IF G$ = "S" THEN CX = CX + 1
+60 IF G$ = "D" THEN CY = CY +1
+70 IF G$ = "C" THEN 200
+110 POKE P+40* CX +CY,I
+130 GO TO 20
+200 INPUT "WAS WILLST DU SEIN?";I
+210 GO TO 20
 
