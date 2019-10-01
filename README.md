@@ -225,10 +225,10 @@ POKE 32956,61
 40 NEXT K
 50 NEXT I
 ```
+* Das sind alle möglichen Zeichen sortiert nach ihren Werten 0 bis 255
 
 ![](ZeichensatzPET.png){height=250}
 
-* Das sind alle möglichen Zeichen
 
 
 
