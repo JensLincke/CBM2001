@@ -216,7 +216,8 @@ POKE 32956,61
 * A ist der Punkt auf dem Bildschirm auf dem man sich befindet
 * X und Y sind die Koordinaten nach oben, unten, links und rechts, wie in einem Koordinatensystem
 
-
+## 10. Zeichensatz
+15 = 0
 
 
 
