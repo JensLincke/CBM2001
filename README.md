@@ -226,6 +226,7 @@ POKE 32956,61
 50 NEXT I
 ```
 * Das sind alle möglichen Zeichen sortiert nach ihren Werten 0 bis 255
+* Diese Werte müssen in den obigen Programmen eingegeben werden, um die Zeichen zu erhalten
 
 ![](ZeichensatzPET.png){height=250}
 
