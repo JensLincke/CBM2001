@@ -108,7 +108,9 @@ save
 
 - Hiermit kann man den Benutzer des Programmes fragen, welche Variablen er nutzen möchte
 - dies ist mit nur einer, aber auch mit mehreren Variablen möglich
-- Die Fragen müssen am Anfang des Programmabschnitts sein, da sonst mitten im Programm, aufgrund der Schleife, wieder danach gefragt wird## 6. Mit Zeichen malen
+- Die Fragen müssen am Anfang des Programmabschnitts sein, da sonst mitten im Programm, aufgrund der Schleife, wieder danach gefragt wird
+
+## 6. Mit Zeichen malen
 ```
 POKE 32956,61
 ```
