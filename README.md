@@ -107,4 +107,14 @@ save
 
 - Hiermit kann man den Benutzer des Programmes fragen, welche Variablen er nutzen möchte
 - dies ist mit nur einer, aber auch mit mehreren Variablen möglich
-- Die Fragen müssen am Anfang des Programmabschnitts sein, da sonst mitten im Programm, aufgrund der Schleife, wieder danach gefragt wird
+- Die Fragen müssen am Anfang des Programmabschnitts sein, da sonst mitten im Programm, aufgrund der Schleife, wieder danach gefragt wird## 6. Mit Zeichen malen
+```
+POKE 32956,61
+```
+* zeichnet `=` in den Oberen rechten Teil des Bildschirms
+```
+10 for i= 1 to 256
+20 poke i + 32768,i
+30 next i
+``
+
