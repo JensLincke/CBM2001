@@ -124,16 +124,6 @@ POKE 32956,61
 * Die Zeichen werden von oben links nebeneinander aufgelistet und belegen ca. 3,5 Zeilen
 * 32768 legt den Startpunkt auf dem Bildschirm fest und kann in jede beliebige, auf dem Bildschirm vorhandene (32768-33767)zahl geändert werden
 
-Hallo Pauline
-
-
-
-asdfghjklöäölkjhgfdsaaaaaaaaaaaaaaassssssssssssssdffffffffffhallihallo
-
-
-
-
-
 
 
 
