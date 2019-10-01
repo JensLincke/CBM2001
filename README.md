@@ -124,7 +124,7 @@ POKE 32956,61
 * Die Zeichen werden von oben links nebeneinander aufgelistet und belegen ca. 3,5 Zeilen
 * 32768 legt den Startpunkt auf dem Bildschirm fest und kann in jede beliebige, auf dem Bildschirm vorhandene (32768-33767) geändert werden
 
-![Mit o's gemalte linie](SchiefeLinie.png){height=200}
+![Mit o's gemalte linie](SchiefeLinie.png){height=250}
 
 ```
 10 GET G$
@@ -151,9 +151,9 @@ POKE 32956,61
 * laufendes O, dass mit wasd bewegt werden kann
 * läuft jewails einen Schritt in die angegebene Richtung
 s
-## paint with numbers
+## painting with numbers
 
-![](paint.png){height 300}
+![](paint.png){height 250}
 ```
 10 P = 32768
 11 CX = 20
@@ -170,11 +170,10 @@ s
 200 INPUT "WAS WILLST DU SEIN?";I
 210 GO TO 20
 ```
-
-
-
-
-
+* mit diesem Programmabschnitt kann man mit den Tasten WASD sozusagen malen
+* durch eingabe von `C` wird man gefragt was man sein will 
+* Jedes Zeichen hat eine zugehörige Nummer, welche man eintippen muss, damit der Character zu diesem wechselt
+* Der bereits gefahrene Weg wird nicht, wie beim Vorherigen Programmabschnitt, sofort wieder gelöscht
 
 ```
 10 P = 32768
