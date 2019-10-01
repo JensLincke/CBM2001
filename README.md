@@ -217,7 +217,7 @@ POKE 32956,61
 * X und Y sind die Koordinaten nach oben, unten, links und rechts, wie in einem Koordinatensystem
 
 ## 10. Zeichensatz
-15 = 0
+![](ZeichensatzPET.png){height=250}
 
 
 
