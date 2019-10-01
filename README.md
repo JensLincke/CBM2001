@@ -150,7 +150,7 @@ POKE 32956,61
 ```
 * laufendes O, dass mit wasd bewegt werden kann
 * läuft jewails einen Schritt in die angegebene Richtung
-
+s
 ## paint with numbers
 
 ![](paint.png)
