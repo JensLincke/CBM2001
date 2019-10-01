@@ -225,6 +225,7 @@ POKE 32956,61
 40 NEXT K
 50 NEXT I
 ``` {style="float:left"}
+
 ![](ZeichensatzPET.png){height=250}
 
 * Das sind alle möglichen Zeichen
