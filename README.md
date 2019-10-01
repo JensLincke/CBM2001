@@ -100,6 +100,7 @@ save
 10 input "Wieviel?";N
 20 input "Wie schnell?";J
 30 I=0
+
 40 Print I
 50 I=I+J
 60 If <N then 40
@@ -116,5 +117,6 @@ POKE 32956,61
 10 for i= 1 to 256
 20 poke i + 32768,i
 30 next i
-``
+```
+
 
