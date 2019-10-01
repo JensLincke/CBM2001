@@ -218,8 +218,15 @@ POKE 32956,61
 
 ## 10. Zeichensatz
 ![](ZeichensatzPET.png){height=250}
-
-
+```
+5 PRINT CHR$(147)
+10 FOR I=0 TO 15
+20 FOR K=0 TO 15
+30 POKE 32768 + (I+4)*40 + K+4 ,I*16+K
+40 NEXT K
+50 NEXT I
+```
+* Das sind alle möglichen Zeichen
 
 
 
