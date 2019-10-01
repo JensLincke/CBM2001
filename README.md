@@ -224,7 +224,7 @@ POKE 32956,61
 30 POKE 32768 + (I+4)*40 + K+4 ,I*16+K
 40 NEXT K
 50 NEXT I
-```{style="float:left"}
+```
 
 ![](ZeichensatzPET.png){height=250}
 
