@@ -285,9 +285,8 @@ Schnelle Version (2-3s vs 6s):
 * mehr als doppelt so schnell
 * weniger Rechnungen, da sie entweder bereits ausgerechnet sind oder nur einmal ausgerechnet werden, anstatt mehrfach
 
-### Überschriften und Anmerkungen
+![](%20Anmerkungen.png)
 
-![](anmerkung.png)
 
 * mit `REM` kann man Anmerkungen in das Programm einfügen, ohne dass diese am Ende sichtbar sind
 
