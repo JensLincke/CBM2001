@@ -255,7 +255,7 @@ POKE 32956,61
 210 INPUT "WIE SCHNELL WILLST DU SEIN?";V
 300 GOTO 20
 ```
-* nun kann man auch seine Geschwindigkeit ändern, indem man "F" drückt und eine Zahl eintippt
+* nun kann man auch seine Geschwindigkeit ändern, indem man "F" drückt und eine Zahl (am besten von 1-10) eintippt
 ## 10. Zeichensatz
 ```
 5 PRINT CHR$(147)
@@ -282,10 +282,12 @@ Schnelle Version (2-3s vs 6s):
 40 NEXT K
 50 NEXT I
 ```
+* mehr als doppelt so schnell
+* weniger Rechnungen, da sie entweder bereits ausgerechnet sind oder nur einmal ausgerechnet werden, anstatt mehrfach
 
-### Überschrift und Anmerkungen
+### Überschriften und Anmerkungen
 
-
+![](%C3%BCberschrift%2FAnmerkung.png)
 * mit `REM` kann man Anmerkungen in das Programm einfügen, ohne dass diese am Ende sichtbar sind
 
 
