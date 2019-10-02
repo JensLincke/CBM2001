@@ -346,6 +346,10 @@ Schnelle Version (2-3s vs 6s):
 80 NEXT F
 ```
 ![](ProgrammImSpeicher.png){height=350}
+* RAM des Computers
+* zeigt alles auf 8 Seiten an
+* Im Bild ist das dafür verwendete Programm zu sehen
+* der Bildschirm cleart sich nach jeder Seite,bevor eine neue lädt
 
 
 
