@@ -327,6 +327,8 @@ Schnelle Version (2-3s vs 6s):
 300 GOTO 20
 ```
 
+## 12 Speicher im Spiegel
+
 
 
 
