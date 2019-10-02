@@ -275,7 +275,7 @@ POKE 32956,61
 * mit `REM` kann man Anmerkungen in das Programm einfügen, ohne dass diese am Ende sichtbar sind
 
 
-
+```
 1 REM *********** S N A K E ***********
 10 P = 32768
 11 X = 20.0
@@ -310,7 +310,7 @@ POKE 32956,61
 205 GOTO 20
 210 INPUT "WIE SCHNELL WILLST DU SEIN?";V
 300 GOTO 20
-
+```
 
 
 
