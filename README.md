@@ -345,7 +345,7 @@ Schnelle Version (2-3s vs 6s):
 70 PRINT CHR$(147)
 80 NEXT F
 ```
-![](ProgrammImSpeicher.png){250}
+![](ProgrammImSpeicher.png){height=250}
 
 
 
