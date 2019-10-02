@@ -270,11 +270,26 @@ POKE 32956,61
 
 ![](ZeichensatzPET.png){height=250}
 
+Schnelle Version (2-3s vs 6s):
+
+```
+5 PRINT CHR$(147)
+10 FOR I=0 TO 15
+11 A=32932 + (I)*40
+12 B=I*16
+20 FOR K=0 TO 15
+30 POKE A + K ,B+K
+40 NEXT K
+50 NEXT I
+```
+
 ### Überschrift und Anmerkungen
-(foto hier einfügen)
+
+
 * mit `REM` kann man Anmerkungen in das Programm einfügen, ohne dass diese am Ende sichtbar sind
 
 
+## 11. 2 Variablen
 ```
 1 REM *********** S N A K E ***********
 10 P = 32768
