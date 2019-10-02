@@ -11,7 +11,7 @@ print "hello"
 hello
 ```
 
-- führt eine Anweisung einfach aus
+- mit `print` wird der darauf folgende Text vom Computer geschrieben
 
 ``` 
 10 print "hello"
@@ -31,16 +31,18 @@ hello
 ``` 
 10 print "hello"
 20 go to 10 
+30 print "good bye"
 ```
 
 - Programmabschnitt wiederholt sich immer wieder von Zeile 10 bis 20
 - schreibt immer wieder "hello" bis man das Programm unterbricht
+- Zeile 30 wird nie abgspielt, da das Programm in einer Schleife hängt
 
 ``` 
 list
 ```
 
-- zeigt alle Programme (an Zeilen gebundene Anweisungen) an
+- zeigt das gesamte Programm (an Zeilen gebundene Anweisungen) an
 
 ``` 
 10 i=0
@@ -52,7 +54,7 @@ list
 - Mit diesen Befehlen zählt der Computer von 0 in einer-Schritten aufwärts, bis man ihn stoppt
 - 0 ist der Startpunkt
 - `i=i+1` gibt an, dass das Programm in Einer-Schritten zählen
-- `go to 20` lässt das Programm sich immer wieder wiederholen
+- `i=0` gibt an, dass der Startpunkt 0 ist
 
 ## 2. Speichern
 
@@ -61,7 +63,7 @@ save
 ```
 
 - speichert das gesamte Programm auf einer Kassette, falls eine solche angeschlossen ist
-- man muss play und reccord auf dem kassettenlesegerät gedrückt halten, bis auf dem Computer `waiting` zu lesen ist
+- man muss play und reccord auf dem Kassettenlesegerät gedrückt halten, bis auf dem Computer `waiting` zu lesen ist
 - Speichert man ein Programm auf einer Kassette kann man es durch `load` wieder laden, falls es durch ausstellen des Computers,oder ähnliches, gelöscht wurde
 - dies kann eine Weile dauern
 
@@ -93,6 +95,7 @@ save
 - Verschiedenste Möglichkeiten mit dem selben Ergebnis
 - Quasi das gleiche wie beim Drucken-Programm nur ohne Drucken
 - hiermit kann man festlegen, wann eine Schleife enden soll und was dann getan werden soll
+- Die Bedingung ist in diesem Fall, dass das Programm stoppt, wenn bis 20 gezählt wurde
 
 ## 5. Benutzerdefinierte Bedingungen
 
@@ -108,13 +111,15 @@ save
 
 - Hiermit kann man den Benutzer des Programms fragen, welche Variablen er nutzen möchte
 - dies ist mit nur einer, aber auch mit mehreren Variablen möglich
-- Die Fragen müssen am Anfang des Programmabschnitts sein, da sonst mitten im Programm, aufgrund der Schleife, wieder danach gefragt wird
+- die Fragen müssen so platziert sein, dass nicht permanent, sondern nur einmal danach gefragt wird (es sei denn es ist anders beabsichtigt)
 
 ## 6. Mit Zeichen malen
 ```
 POKE 32956,61
 ```
 * zeichnet `=` in den Oberen rechten Teil des Bildschirms
+* die vordere Zahl gibt an wo auf dem Bildschirm das Zeichen gesetzt werden soll
+* die Zahl hinter dem Komma gibt an, welches Zeichen gesetzt werden soll
 ```
 10 for i= 1 to 256
 20 poke i + 32768,i
@@ -215,7 +220,42 @@ POKE 32956,61
 * wir haben festgestellt, dass man Dinge nur mit Zeichenkombinationen mit maximal 2 Zeichen benennen kann. 
 * A ist der Punkt auf dem Bildschirm auf dem man sich befindet
 * X und Y sind die Koordinaten nach oben, unten, links und rechts, wie in einem Koordinatensystem
-
+```
+10 P = 32768
+11 X = 20.0
+12 Y = 20.0
+13 XV = 0.0
+14 YV = 0.0
+19 PRINT CHR$ (147)
+20 GET G$
+30 IF G$ <>"W" THEN 40
+31 XV= 0
+32 YV = -V / 10
+40 IF G$ <> "A" THEN 50
+41 XV = -V / 10
+42 YV = 0
+50 IF G$ <> "S" THEN 60
+51 XV = 0
+52 YV = V/ 10
+60 IF G$ <> "D" THEN 70
+61 XV = V / 10
+62 YV = 0
+70 IF G$ = "C" THEN 200
+75 IF G$= "F" THEN 210
+80 X = X + XV
+81 Y = Y + YV
+82 A=(40 * INT(Y))+INT(X)
+85 GOTO 120
+90 PRINT "X" X "Y" Y "XV" XV "YV" YV "A" A
+95 GOTO 20
+120 POKE P+INT(A),I
+130 GO TO 20
+200 INPUT "WAS WILLST DU SEIN?";I
+205 GOTO 20
+210 INPUT "WIE SCHNELL WILLST DU SEIN?";V
+300 GOTO 20
+```
+* nun kann man auch seine Geschwindigkeit ändern, indem man "F" drückt und eine Zahl eintippt
 ## 10. Zeichensatz
 ```
 5 PRINT CHR$(147)
@@ -230,6 +270,9 @@ POKE 32956,61
 
 ![](ZeichensatzPET.png){height=250}
 
+### Überschrift und Anmerkungen
+(foto hier einfügen)
+* mit `REM` kann man Anmerkungen in das Programm einfügen, ohne dass diese am Ende sichtbar sind
 
 
 
