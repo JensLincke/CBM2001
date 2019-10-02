@@ -285,7 +285,7 @@ Schnelle Version (2-3s vs 6s):
 * mehr als doppelt so schnell
 * weniger Rechnungen, da sie entweder bereits ausgerechnet sind oder nur einmal ausgerechnet werden, anstatt mehrfach
 
-### Überschriften und Anmerkungen
+### 12.Überschriften und Anmerkungen
 
 ![](%20Anmerkungen.png){height=70}
 
@@ -294,7 +294,7 @@ Schnelle Version (2-3s vs 6s):
 
 
 
-## 11. 2 Variablen
+## 12. zwei Variablen
 ```
 1 REM *********** S N A K E ***********
 10 P = 32768
@@ -332,10 +332,20 @@ Schnelle Version (2-3s vs 6s):
 300 GOTO 20
 ```
 
-## 12 Speicher im Spiegel
-
-
-
+## 13. Speicher im Spiegel
+```
+5 PRINT CHR$(147)
+10 FOR F=0 TO 8
+20 FOR I=0 TO 999
+25 V=PEEK (F*1000+I)
+30 POKE 32768 + I,V
+40 NEXT I
+50 GET G$
+60 IF G$ = "" THEN 50 
+70 PRINT CHR$(147)
+80 NEXT F
+```
+![](ProgrammImSpeicher.png)
 
 
 
