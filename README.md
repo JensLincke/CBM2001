@@ -287,8 +287,10 @@ Schnelle Version (2-3s vs 6s):
 
 ### Überschriften und Anmerkungen
 
-![](%C3%BCberschrift%2FAnmerkung.png)
+![](anmerkung.png)
+
 * mit `REM` kann man Anmerkungen in das Programm einfügen, ohne dass diese am Ende sichtbar sind
+
 
 
 ## 11. 2 Variablen
