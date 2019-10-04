@@ -331,6 +331,9 @@ Schnelle Version (2-3s vs 6s):
 210 INPUT "WIE SCHNELL WILLST DU SEIN?";V
 300 GOTO 20
 ```
+Grundgeschwindigkeit
+ ` 15 V= 1` 
+* Als erstes lief das Programm ohne Grundgeschwindigkeit, wodurch man erst eine Geschwindigkeit angeben musste, damit die Schlange sich bewegte
 
 ## 13. Speicher im Spiegel
 ```
@@ -351,7 +354,7 @@ Schnelle Version (2-3s vs 6s):
 * Im Bild ist das dafür verwendete Programm zu sehen
 * der Bildschirm cleart sich nach jeder Seite,bevor eine Neue lädt
 
-Für einen Einblick in den ROM (Zeile 10 einfach ersetetzen)
+Für einen Einblick in den ROM (Zeile 10 einfach ersetetzen):
 
   `10 FOR F=49 TO 55`
 
