@@ -462,6 +462,7 @@ Für einen Einblick in den ROM (Zeile 10 einfach ersetetzen):
 * Kann allerdings nur maximal 1000 Blöcke "leben"
 *
 ## 16. GAME OVER
+```
 1 REM *********** S N A K E ***********
 10 P = 32768 : REM SPEICHERADRESSE BILDSCHIRM (ECKE OBEN LINKS)
 20 X = 20.0 :REM AKTUELLE POSITION DER SCHLANGE X-KOORDINATE
@@ -520,6 +521,6 @@ Für einen Einblick in den ROM (Zeile 10 einfach ersetetzen):
 600 PRINT "G A M E  O V E R"
 
 
-
+```
 
 
