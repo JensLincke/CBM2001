@@ -182,6 +182,11 @@ POKE 32956,61
  tippen
 * Ein Problem ist, dass die Frage "Was willst du sein?" jedes mal stehen bleibt, wodurch der Bildschirm nicht 100% frei ist
 * im gegensatz zum vorherigen "mit Zeichen malen" kann man bei diesem die Richtung angeben, in welche gezeichnet werden soll und kann 
+
+Später hinzugefügt:
+`I= 160`
+* Anfangsskin der SNAKE nicht mehr @ (weil 0),sondern ein gefüllter Block
+
 ## 9. The painting snake
 ```
 10 P = 32768
@@ -400,7 +405,62 @@ Für einen Einblick in den ROM (Zeile 10 einfach ersetetzen):
 500 INPUT "WIE SCHNELL WILLST DU SEIN?";V
 550 GOTO 100
 ```
-
+## 15 Fixed length SNAKE
+![](gekuerzteSNAKE.png){height = 250}
+```
+1 REM *********** S N A K E ***********
+10 P = 32768 : REM SPEICHERADRESSE BILDSCHIRM (ECKE OBEN LINKS)
+20 X = 20.0 :REM AKTUELLE POSITION DER SCHLANGE X-KOORDINATE
+30 Y = 20.0 :REM AKTUELLE POSITION DER SCHLANGE Y-KOORDINATE
+40 XV = 0.0 :REM X-KOMPONENTE DER GESCHWINDIGKEIT
+50 YV = 0.0 :REM Y-KOMPONENTE DER GESCHWINDIGKEIT
+60 V= 1 :REM GESCHWINDIGKEIT 
+62 L = 1
+64 LM = 21
+65 I= 160
+70 DIM S(1000) :REM ALLE POSITIONEN DER SCHLANGE
+71 S(0)=INT( ( 40 * INT ( Y ) ) + INT ( X ))
+80 K = 0 :REM KOPF DER SCHLANGE
+90 PRINT CHR$ (147)
+100 GET G$
+110 IF G$ <>"W" THEN 140
+120 XV= 0
+130 YV = -V / 10
+140 IF G$ <> "A" THEN 170
+150 XV = -V / 10
+160 YV = 0
+170 IF G$ <> "S" THEN 200
+180 XV = 0
+190 YV = V/ 10
+200 IF G$ <> "D" THEN 230
+210 XV = V / 10
+220 YV = 0
+230 IF G$ = "C" THEN 460
+240 IF G$= "F" THEN 500
+250 X = X + XV
+270 Y = Y + YV
+290 A = ( 40 * INT ( Y ) ) + INT ( X )
+310 IF S (K) = INT (A) THEN 400
+320 K = K + 1
+330 S(K)=A
+340 L = L + 1
+350 IF L < LM THEN GOTO 400
+355 REM PRINT S(K-L+1)
+360 POKE P+INT(S(K-L+1)),32
+370 L=L-1
+400 GOTO 420
+410 PRINT "X" X "Y" Y "XV" XV "YV" YV "A" A
+415 GOTO 100
+420 POKE P+INT(A),I
+440 GOTO 100
+460 INPUT "WAS WILLST DU SEIN?";I
+480 GOTO 100
+500 INPUT "WIE SCHNELL WILLST DU SEIN?";V
+550 GOTO 100
+```
+* Schlange ist maximal 20 Blöcke lang
+* Kann allerdings nur maximal 1000 Blöcke "leben"
+* 
 
 
 
