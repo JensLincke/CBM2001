@@ -318,7 +318,7 @@ Schnelle Version (2-3s vs 6s):
 62 YV = 0
 70 IF G$ = "C" THEN 200
 75 IF G$= "F" THEN 210
-80 X = X + XV
+80 X = X + X
 81 Y = Y + YV
 82 A=(40 * INT(Y))+INT(X)
 85 GOTO 120
@@ -358,6 +358,48 @@ Für einen Einblick in den ROM (Zeile 10 einfach ersetetzen):
 
   `10 FOR F=49 TO 55`
 
+## 14. Renumber Snake
+```
+1 REM *********** S N A K E ***********
+10 P = 32768
+20 X = 20.0
+30 Y = 20.0
+40 XV = 0.0
+50 YV = 0.0
+60 V= 1
+70 DIM S% (1000)
+80 K = 0
+90 PRINT CHR$ (147)
+100 GET G$
+110 IF G$ <>"W" THEN 140
+120 XV= 0
+130 YV = -V / 10
+140 IF G$ <> "A" THEN 170
+150 XV = -V / 10
+160 YV = 0
+170 IF G$ <> "S" THEN 200
+180 XV = 0
+190 YV = V/ 10
+200 IF G$ <> "D" THEN 230
+210 XV = V / 10
+220 YV = 0
+230 IF G$ = "C" THEN 460
+240 IF G$= "F" THEN 500
+250 X = X + XV
+270 Y = Y + YV
+290 A=(40 * INT(Y))+INT(X)
+320 S%(K)=A
+340 K=K+1
+360 GOTO 420
+380 PRINT "X" X "Y" Y "XV" XV "YV" YV "A" A
+400 GOTO 100
+420 POKE P+INT(A),I
+440 GOTO 100
+460 INPUT "WAS WILLST DU SEIN?";I
+480 GOTO 100
+500 INPUT "WIE SCHNELL WILLST DU SEIN?";V
+550 GOTO 100
+```
 
 
 
