@@ -352,6 +352,7 @@ Schnelle Version (2-3s vs 6s):
 * der Bildschirm cleart sich nach jeder Seite,bevor eine Neue lädt
 
 Für einen Einblick in den ROM (Zeile 10 einfach ersetetzen)
+
   `10 FOR F=49 TO 55`
 
 
