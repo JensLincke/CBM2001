@@ -296,7 +296,7 @@ Schnelle Version (2-3s vs 6s):
 
 
 * mit `REM` kann man Anmerkungen in das Programm einfügen, ohne dass diese am Ende sichtbar sind
-
+* da alle Befehle, welche sich hinter `REM` befinden nicht ausgeführt werden, kann man damit auch einzelne Zeilen unwirksam machen, was zum Fehler finden praktisch sein kann
 
 
 ## 12. zwei Variablen
@@ -336,9 +336,9 @@ Schnelle Version (2-3s vs 6s):
 210 INPUT "WIE SCHNELL WILLST DU SEIN?";V
 300 GOTO 20
 ```
-Grundgeschwindigkeit
+Anfangsgeschwindigkeit
  ` 15 V= 1` 
-* Als erstes lief das Programm ohne Grundgeschwindigkeit, wodurch man erst eine Geschwindigkeit angeben musste, damit die Schlange sich bewegte
+* Als erstes lief das Programm ohne Anfangsgeschwindigkeit, wodurch man erst eine Geschwindigkeit angeben musste, damit die Schlange sich bewegte
 
 ## 13. Speicher im Spiegel
 ```
@@ -460,7 +460,64 @@ Für einen Einblick in den ROM (Zeile 10 einfach ersetetzen):
 ```
 * Schlange ist maximal 20 Blöcke lang
 * Kann allerdings nur maximal 1000 Blöcke "leben"
-* 
+*
+## 16. GAME OVER
+1 REM *********** S N A K E ***********
+10 P = 32768 : REM SPEICHERADRESSE BILDSCHIRM (ECKE OBEN LINKS)
+20 X = 20.0 :REM AKTUELLE POSITION DER SCHLANGE X-KOORDINATE
+30 Y = 20.0 :REM AKTUELLE POSITION DER SCHLANGE Y-KOORDINATE
+40 XV = 0.0 :REM X-KOMPONENTE DER GESCHWINDIGKEIT
+50 YV = 0.0 :REM Y-KOMPONENTE DER GESCHWINDIGKEIT
+60 V= 1 :REM GESCHWINDIGKEIT 
+62 L = 1
+64 LM = 21
+65 I= 160
+70 DIM S(1000) :REM ALLE POSITIONEN DER SCHLANGE
+71 S(0)=INT( ( 40 * INT ( Y ) ) + INT ( X ))
+80 K = 0 :REM KOPF DER SCHLANGE
+90 PRINT CHR$ (147)
+100 GET G$
+110 IF G$ <>"W" THEN 140
+120 XV= 0
+130 YV = -V / 10
+140 IF G$ <> "A" THEN 170
+150 XV = -V / 10
+160 YV = 0
+170 IF G$ <> "S" THEN 200
+180 XV = 0
+190 YV = V/ 10
+200 IF G$ <> "D" THEN 230
+210 XV = V / 10
+220 YV = 0
+230 IF G$ = "C" THEN 460
+240 IF G$= "F" THEN 500
+250 X = X + XV
+270 Y = Y + YV
+272 IF X1 = INT(X) AND Y1= INT(Y) THEN 100
+275 X1 = INT(X)
+280 Y1 = INT(Y)
+290 A = ( 40 * INT ( Y ) ) + INT ( X )
+310 IF S (K) = INT (A) THEN 400
+320 K = K + 1
+330 S(K)=A
+340 L = L + 1
+350 IF L < LM THEN GOTO 400
+355 REM PRINT S(K-L+1)
+360 POKE P+INT(S(K-L+1)),32
+370 L=L-1
+400 GOTO 420
+410 PRINT "X" X "Y" Y "XV" XV "YV" YV "A" A
+415 GOTO 100
+420 O= P+INT(A)
+422 REM PRINT O, PEEK (O)
+425 IF PEEK (O) = I THEN 600
+430 POKE O,I
+440 GOTO 100
+460 INPUT "WAS WILLST DU SEIN?";I
+480 GOTO 100
+500 INPUT "WIE SCHNELL WILLST DU SEIN?";V
+550 GOTO 100
+600 PRINT "G A M E  O V E R"
 
 
 
