@@ -406,7 +406,7 @@ Für einen Einblick in den ROM (Zeile 10 einfach ersetetzen):
 550 GOTO 100
 ```
 ## 15 Fixed length SNAKE
-![](gekuerzteSNAKE.png){height = 250}
+![](gekuerzteSNAKE.png){height = 50}
 ```
 1 REM *********** S N A K E ***********
 10 P = 32768 : REM SPEICHERADRESSE BILDSCHIRM (ECKE OBEN LINKS)
