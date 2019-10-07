@@ -6,6 +6,21 @@
 
 [PET CBM Emulator](https://www.masswerk.at/pet/)
 
+<script>
+  var comp;
+
+(async () => {
+  comp = await (<lively-iframe></lively-iframe>)
+  lively.setExtent(comp.get('iframe'), lively.pt(800,600))
+  comp.setURL("https://www.masswerk.at/pet/")
+  comp.hideMenubar()
+  comp.update()
+  
+})()
+comp
+</script>
+
+
 ## 1. Einfache Programme
 
 ``` 
