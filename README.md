@@ -12,7 +12,17 @@
 (async () => {
   comp = await (<lively-iframe></lively-iframe>)
   lively.setExtent(comp.get('iframe'), lively.pt(800,600))
-  comp.setURL("https://www.masswerk.at/pet/")
+    
+//   var code = `
+// 05 i = 0
+// 10 print "hello"  i
+// 20 i = i + 1
+// 30 goto 10 `
+  
+  var code = this.parentElement.querySelector(".Snake7").textContent
+
+
+  comp.setURL("https://www.masswerk.at/pet/?data=" +encodeURIComponent(code) +"&autorun=true")
   comp.hideMenubar()
   comp.update()
   
@@ -23,7 +33,7 @@
 
 ## 1. Einfache Programme
 
-``` 
+```basic 
 print "hello"
 hello
 ```
@@ -205,7 +215,8 @@ Später hinzugefügt:
 * Anfangsskin der SNAKE nicht mehr @ (weil 0),sondern ein gefüllter Block
 
 ## 9. The painting snake
-```
+
+```javascript {.Snake1 }
 10 P = 32768
 11 X = 20.0
 12 Y = 20.0
@@ -237,12 +248,14 @@ Später hinzugefügt:
 200 INPUT "WAS WILLST DU SEIN?";I
 210 GO TO 20
 ```
+
 * Zeile 85 bis 95 sind ein Werkzeug zum Debuggen, welches normalerweise übersprungen wird
 * der unterschied von diesem Programm zum vorherigen ist, dass der Charakter sich nun von selbst bewegt und man nicht mehr für jedes Zeichen eine Taste drücken muss, sondern nur noch wenn man die Richtung ändern möchte.
 * wir haben festgestellt, dass man Dinge nur mit Zeichenkombinationen mit maximal 2 Zeichen benennen kann. 
 * A ist der Punkt auf dem Bildschirm auf dem man sich befindet
 * X und Y sind die Koordinaten nach oben, unten, links und rechts, wie in einem Koordinatensystem
-```
+
+```javascript {.Snake3 }
 10 P = 32768
 11 X = 20.0
 12 Y = 20.0
@@ -278,8 +291,10 @@ Später hinzugefügt:
 300 GOTO 20
 ```
 * nun kann man auch seine Geschwindigkeit ändern, indem man "F" drückt und eine Zahl (am besten von 1-10) eintippt
+
 ## 10. Zeichensatz
-```
+
+```javascript 
 5 PRINT CHR$(147)
 10 FOR I=0 TO 15
 20 FOR K=0 TO 15
@@ -287,6 +302,7 @@ Später hinzugefügt:
 40 NEXT K
 50 NEXT I
 ```
+
 * Das sind alle möglichen Zeichen sortiert nach ihren Werten 0 bis 255
 * Diese Werte müssen in den obigen Programmen eingegeben werden, um die Zeichen zu erhalten
 
@@ -317,7 +333,8 @@ Schnelle Version (2-3s vs 6s):
 
 
 ## 12. zwei Variablen
-```
+
+```javascript {.Snake4 }
 1 REM *********** S N A K E ***********
 10 P = 32768
 11 X = 20.0
@@ -358,7 +375,7 @@ Anfangsgeschwindigkeit
 * Als erstes lief das Programm ohne Anfangsgeschwindigkeit, wodurch man erst eine Geschwindigkeit angeben musste, damit die Schlange sich bewegte
 
 ## 13. Speicher im Spiegel
-```
+```javascript {.Snake5 }
 5 PRINT CHR$(147)
 10 FOR F=0 TO 8
 20 FOR I=0 TO 999
@@ -381,7 +398,8 @@ Für einen Einblick in den ROM (Zeile 10 einfach ersetetzen):
   `10 FOR F=49 TO 55`
 
 ## 14. Renumber Snake
-```
+
+```javascript {.Snake6 }
 1 REM *********** S N A K E ***********
 10 P = 32768
 20 X = 20.0
@@ -423,8 +441,10 @@ Für einen Einblick in den ROM (Zeile 10 einfach ersetetzen):
 550 GOTO 100
 ```
 ## 15 Fixed length SNAKE
+
 ![](gekuerzteSNAKE.png){height=250}
-```
+
+```javascript {.Snake6 }
 1 REM *********** S N A K E ***********
 10 P = 32768 : REM SPEICHERADRESSE BILDSCHIRM (ECKE OBEN LINKS)
 20 X = 20.0 :REM AKTUELLE POSITION DER SCHLANGE X-KOORDINATE
@@ -479,7 +499,8 @@ Für einen Einblick in den ROM (Zeile 10 einfach ersetetzen):
 * Kann allerdings nur maximal 1000 Blöcke "leben"
 *
 ## 16. GAME OVER
-```
+
+```javascript {.Snake7 }
 1 REM *********** S N A K E ***********
 10 P = 32768 : REM SPEICHERADRESSE BILDSCHIRM (ECKE OBEN LINKS)
 20 X = 20.0 :REM AKTUELLE POSITION DER SCHLANGE X-KOORDINATE
