@@ -16,8 +16,8 @@
   comp.hideMenubar()
   comp.update()
   
+  return comp
 })()
-comp
 </script>
 
 
